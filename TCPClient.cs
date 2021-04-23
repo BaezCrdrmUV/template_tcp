@@ -55,8 +55,11 @@ namespace tcp_com
                 catch (Exception ex)
                 {
                     Console.WriteLine("Error {0}", ex.Message);
+                    break;
                 }
             }
+            Console.WriteLine("Desconectado");
+            return;
         }
     }
 }

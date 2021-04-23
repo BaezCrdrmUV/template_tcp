@@ -6,7 +6,7 @@ namespace tcp_com
     {
         static void Main(string[] args)
         {
-            if(String.IsNullOrEmpty(args[0]) || args[0] == "client")
+            if(args.Length == 0 || String.IsNullOrEmpty(args[0]) || args[0] == "client")
             {
                 string name = "Cliente";
                 try
