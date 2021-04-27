@@ -29,6 +29,8 @@ namespace tcp_com
 
         public void Chat()
         {
+            Console.WriteLine("IP: " + IP);
+            Console.WriteLine("Port: " + Port.ToString());
             client.Connect(IP, Port);   
             Console.WriteLine("Conectado");
 
